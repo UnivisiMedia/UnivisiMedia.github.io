@@ -1,12 +1,4 @@
-/*
-* Template Name: Untreefolio
-* Template Author: Untree.co
-* Template License: https://creativecommons.org/licenses/by/3.0/
-* Author URI: https://untree.co/
 
-* Twitter: https://twitter.com/Untree_co
-* Facebook: https://web.facebook.com/Untree.co/
-*/
 @import url("https://fonts.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap");
 body {
   font-family: "Roboto", sans-serif;
@@ -554,7 +546,7 @@ a {
       height: 100vh;
       min-height: 650px; }
   .cover-v1 .heading {
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: 900;
     color: #3369e7; }
     @media (max-width: 991.98px) {
@@ -570,11 +562,61 @@ a {
   .cover-v1 .post-meta {
     font-size: 18px; }
   .cover-v1 .subheading {
-    font-size: 33px;
+    font-size: 20px;
     color: #495057; }
     @media (max-width: 991.98px) {
       .cover-v1 .subheading {
-        font-size: 24px; } }
+        font-size: 20px; } }
+
+        .down-arrow {
+          position: absolute;
+          top: calc(95vh - 60px);
+          left: calc(50% - 14px);
+          width: 0;
+          border-radius: 2px;
+          animation: jumpInfinite 1.5s infinite;
+
+        }
+        
+        .down-arrow:after {
+          content: " ";
+          position: absolute;
+          top: 12px;
+          left: -10px;
+          width: 16px;
+          height: 16px;
+          border-bottom: 4px solid;
+          border-right: 4px solid;
+          border-radius: 4px;
+          transform: rotateZ(45deg);
+          
+        }
+
+        @keyframes jumpInfinite {
+          0% {
+            margin-top: 0;
+          }
+          50% {
+            margin-top: 20px;
+          }
+          100% {
+            margin-top: 0;
+          }
+        }
+  .contact{
+    color: gray;
+  }
+
+.contact:hover{
+  color: #000;
+  transform: scale(1.1);
+  transition: all ease 0.5s;
+}
+
+.footer-logo {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
 
 .mouse-wrap {
   position: relative;
