@@ -1,7 +1,7 @@
 <?php
 
-// Replace this with your own email address
-$to = 'joefrey.mahusay@gmail.com';
+// Emails sent to biz address
+$to = 'officialunivisimedia@gmail.com';
 
 function url(){
   return sprintf(
